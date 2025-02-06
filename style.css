@@ -1,0 +1,883 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Railway" serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 1440px;
+}
+
+header{
+    background-image: url(/Image/desktop/image-hero.jpg);
+    background-size: cover;
+    height: 330px;
+    color:  hsl(0, 0%, 100%);
+    padding: 10px 70px;
+    max-width: 1440;
+    padding-bottom: 20px;
+}
+
+header .loop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .loop h3{
+    font-family: "alata";
+    font-weight: 300;
+    font-size: 20px;
+}
+header .loop nav{
+    display: flex;
+    gap: 15px;
+}
+
+header .loop nav a{
+    font-family: "Josefin Sans";
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    transition: transform 0.3s ease-in;
+}
+
+header .loop nav a:hover{
+    font-size: 14px;
+    border-bottom: 1px solid yellow;
+}
+header .loop ion-icon{
+    display: none;
+}
+
+header .immersive{
+    border: 1px solid;
+    width: 250px;
+    font-size: 25px;
+    position: relative;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    line-height: 1;
+    padding: 15px;
+}
+
+main{
+    padding: 70px;
+    width: auto; 
+}
+
+.interactive{
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+
+
+.interactive img{
+    width: 650px;
+    position: relative;
+    height: 400px;
+
+}
+
+.interactive .active{
+    z-index: 2;
+    border: none;
+    background-color: white;
+    width: 430px;
+    height: 250px;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    position: absolute;
+    top: 555px;
+    left: 560px;
+    padding-top: 75px;
+    padding-left: 70px;
+    
+}
+
+.interactive .active h2{
+    font-weight: 300;
+    color: black;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.interactive .active p{
+    font-family: "alata";
+    font-weight: 400;
+    color: #555;
+    font-size: 14px;
+}
+
+
+
+.creation{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 0px;
+    
+}
+
+.creation .create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.creation .create h2{
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 20px;
+}
+
+button{
+    width: 80px;
+    height: 25px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.creation .earth{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.creation .earth div{
+    border: 1px solid ;
+    height: 300px;
+    width: 210px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 250px;
+    padding-left: 20px;
+    line-height: 1;
+    
+}
+
+.creation .earth div:nth-child(1){
+    background-image: url(/Image/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    
+}
+
+.creation .earth div:nth-child(2){
+    background-image: url(/Image/desktop/image-night-arcade.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(3){
+    background-image: url(/Image/desktop/image-soccer-team.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(4){
+    background-image: url(/Image/desktop/image-grid.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(5){
+    background-image: url(/Image/desktop/image-from-above.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(6){
+    background-image: url(/Image/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(7){
+    background-image: url(/Image/desktop/image-curiosity.jpg);
+    background-size: cover;
+}
+
+.creation .earth div:nth-child(8){
+    background-image: url(/Image/desktop/image-fisheye.jpg);
+    background-size: cover;
+}
+
+.mobile{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.mobile .createMobile h2{
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 25px;
+}
+ 
+
+.mobile .earthMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.mobile .earthMobile div{
+    border: 1px solid ;
+    height: 200px;
+    width: 540px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1;
+    padding-top: 60px;
+    padding-left: 20px;
+
+}
+.mobile div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile .earthMobile div:nth-child(1){
+    background-image: url(/Image/Mobile/image-deep-earth.jpg);
+    background-size: contain;
+    
+}
+
+.mobile .earthMobile div:nth-child(2){
+    background-image: url(/Image/Mobile/image-night-arcade.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(3){
+    background-image: url(/Image/Mobile/image-soccer-team.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(4){
+    background-image: url(/Image/Mobile/image-grid.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(5){
+    background-image: url(/Image/Mobile/image-from-above.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(6){
+    background-image: url(/Image/Mobile/image-pocket-borealis.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(7){
+    background-image: url(/Image/Mobile/image-curiosity.jpg);
+    background-size: contain;
+}
+
+.mobile .earthMobile div:nth-child(8){
+    background-image: url(/Image/Mobile/image-fisheye.jpg);
+    background-size: contain;
+}
+
+.mobile button{
+    width: 250px;
+    height: 80px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+
+}
+
+.foot .loo h3{
+    font-family: "alata";
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.foot .loo nav{
+    display: flex;
+    gap: 10px;
+}
+
+.foot .loo nav a{
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    transition: transform .3s ease-in;
+}
+
+.foot .loo nav a:hover{
+    font-size: 12px;
+}
+
+
+.foot .icon ion-icon{
+    font-size: 10px;
+    
+    
+      
+ }
+ .foot .icon p{
+    font-size: 10px;
+ }
+
+ 
+
+/* -------------Media Query--------------- */
+
+ @media screen and (max-width:900px){
+    header .loop ion-icon{
+        display: block;
+    }
+
+    header .loop nav a{
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    display: none;
+    }
+
+    .interactive img{
+        width: 500px;
+        height: 350px;
+        justify-items: center;
+    }
+
+    .interactive .active{
+        border: none;
+        width: 470px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute; 
+         left:450px;
+        top: 501px;
+        padding-top: 75px;
+        padding-left: 50px; 
+        max-width: 100%;
+    }
+    .interactive .active h2{
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 1;
+    }
+    
+    .interactive .active p{
+        font-size: 14px;
+    }
+
+    .creation .earth{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 18px;
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    .creation .earth div{
+        border: 1px solid ;
+        height: 300px;
+        width: 170px;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        font-family: "Josefin Sans";
+        font-weight: 300;
+        font-size: 20px;
+        padding-top: 250px;
+        padding-left: 20px;
+        line-height: 1;
+        
+    }
+    .foot .loo h3{
+        font-size: 40px;
+    }
+    .foot .loo nav a{
+        font-size: 10px;
+    }
+    
+    
+    }
+    .foot .icon ion-icon{
+        font-size: 15px;
+
+          
+     }
+     .foot .icon p{
+        font-size: 15px;
+    
+     }
+    
+    
+    
+
+    @media screen and (max-width:857px){
+        .interactive{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-direction: row;
+            padding-bottom: 20px;
+        }
+        .interactive img{
+            width: 620px;
+            height: 450px;
+        }
+    
+        .interactive .active{
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            left:120px;
+            top: 900px;
+            padding-top: 75px;
+            padding-left: 50px;
+            max-width: 100%;
+        }
+        .interactive .active h2{
+            font-weight: 300;
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            line-height: 1;  
+        }
+        
+        .interactive .active p{
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 400;
+            text-align: center;
+            width: 550;
+        }
+        
+        .creation{
+            display: none;
+        }
+        .mobile{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            width: 100%;
+            padding-top: 500px;
+        }
+        .mobile .createMobile h2{
+            font-family: "Josefin Sans";
+            font-weight: 300;
+            font-size: 50px;
+        }
+        .mobile .earthMobile div{
+            border: 1px solid ;
+            height: 230px;
+            width: 650px;
+            border: none;
+        
+        }
+        .mobile div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .foot{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            max-width: 100%;
+        }
+        
+        .foot .loo h3{
+            font-family: "alata";
+            font-weight: 400;
+            font-size: 80px;
+        }
+        
+        .foot .loo nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 100%;
+        }
+        
+        .foot .loo nav a{
+            font-family: "Josefin Sans";
+            font-weight: 300;
+            font-size: 50px;
+            text-decoration: none;
+            color: white;
+            transition: transform .3s ease-in;
+            max-width: 100%;
+        }
+        
+        .foot .loo nav a:hover{
+            font-size: 12px;
+        }
+
+        .foot .loo h3{
+            font-size: 70px;
+        }
+        .foot .loo nav a{
+            font-size: 40px;
+        }
+        .foot .icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        
+        .foot .icon ion-icon{
+            font-size: 50px;
+            
+              
+         }
+         .foot .icon p{
+            font-size: 40px;
+            
+         }
+        }
+         
+           
+        @media screen and (max-width: 700px){
+            .interactive{
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                flex-direction: row;
+                padding-bottom: 20px;
+            }
+            .interactive img{
+                width: 550px;
+                height: 350px;
+            }
+        
+            .interactive .active{
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: absolute;
+                left:100px;
+                top: 770px;
+                padding-top: 75px;
+                padding-left: 20px;
+                max-width: 100%;
+            }
+            .interactive .active h2{
+                font-weight: 300;
+                color: black;
+                font-size: 50px;
+                line-height: 1;  
+            }
+            
+            .interactive .active p{
+                font-size: 25px;
+                text-align: center;
+                width: 500px;
+            }
+            
+            .creation{
+                display: none;
+            }
+            .mobile{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                width: 100%;
+                padding-top: 400px;
+            }
+            .mobile .earthMobile div{
+                border: 1px solid ;
+                height: 150px;
+                width: 500px;
+                border: none;
+            }
+            .mobile div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .foot .loo h3{
+                font-size: 60px;
+            }
+            .foot .loo nav a{
+                font-size: 30px;
+            }
+            
+            .foot .icon ion-icon{
+                font-size: 40px;
+            }
+            .foot .icon p{
+                font-size: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 600px){
+            .interactive{
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                flex-direction: row;
+                padding-bottom: 20px;
+            }
+            .interactive img{
+                width: 450px;
+                height: 350px;
+            }
+        
+            .interactive .active{
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: absolute;
+                left: 15px;
+                top: 750px;
+                padding-top: 75px;
+                padding-left: 20px;
+                max-width: 100%;
+            }
+            .interactive .active h2{
+                font-weight: 300;
+                color: black;
+                font-size: 40px;
+                line-height: 1;  
+            }
+            
+            .interactive .active p{
+                font-size: 20px;
+                width: 400px;
+                text-align: center;
+            }
+            .mobile .createMobile h2{
+                font-family: "Josefin Sans";
+                font-weight: 300;
+                font-size: 40px;
+            }
+            .mobile .earthMobile div{
+                border: 1px solid ;
+                height: 150px;
+                width: 400px;
+                border: none;
+        }
+        .foot .loo h3{
+            font-size: 60px;
+        }
+        .foot .loo nav a{
+            font-size: 30px;
+        }
+        .foot .icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .foot .icon ion-icon{
+            font-size: 35px;
+            
+        }
+        .foot .icon p{
+            font-size: 30px;
+        }
+        
+    }
+
+    @media screen and (max-width: 500px){
+        .interactive img{
+            width: 410px;
+            height: 310px;
+    }
+    .interactive .active{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 10px;
+        top: 720px;
+        padding-top: 75px;
+        padding-left: 10px;
+        padding-right: 18px;
+        max-width: 100%;
+    }
+    .interactive .active h2{
+        font-weight: 300;
+        color: black;
+        font-size: 35px;
+        line-height: 1;  
+    }
+    
+    .interactive .active p{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        width: 350px;
+    }
+
+    .mobile .createMobile h2{
+        font-family: "Josefin Sans";
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .foot .loo h3{
+        font-size: 45px;
+    }
+    .foot .loo nav a{
+        font-size: 30px;
+    }
+    
+    .foot .icon ion-icon{
+        font-size: 20px;
+    }
+    .foot .icon p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .interactive img{
+        width: 300px;
+        height: 250px;
+}
+.interactive .active{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    top: 660px;
+    padding-top: 75px;
+    padding-left: 10px;
+    max-width: 100%;
+}
+.interactive .active h2{
+    font-weight: 300;
+    color: black;
+    font-size: 30px;
+    line-height: 1;  
+}
+
+.interactive .active p{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    width: 250px;
+}
+.mobile .createMobile h2{
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.mobile .earthMobile div{
+    border: 1px solid ;
+    height: 100px;
+    width: 300px;
+    border: none;
+}
+
+.foot .loo h3{
+    font-size: 40px;
+}
+.foot .loo nav a{
+    font-size: 30px;
+}
+
+.foot .icon ion-icon{
+    font-size: 20px;
+}
+.foot .icon p{
+    font-size: 20px;
+}
+
+}
+
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
