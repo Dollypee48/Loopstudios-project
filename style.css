@@ -243,7 +243,7 @@ button{
 .mobile .earthMobile{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     border: none;
@@ -525,6 +525,10 @@ footer{
             font-family: "Josefin Sans";
             font-weight: 300;
             font-size: 50px;
+        }
+
+        .mobile .earthMobile{
+            gap: 40px;
         }
         .mobile .earthMobile div{
             border: 1px solid ;
