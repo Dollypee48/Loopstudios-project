@@ -1,454 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Railway" serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
-}
-
-body{
-    background-color: hsl(0, 0%, 100%);
-    color: #333;
-    line-height: 1.6;
-    font-size: 16px;
-    
-}
-
-header{
-    background-image: url(/Image/desktop/image-hero.jpg);
-    background-size: cover;
-    height: 400px;
-    color:  hsl(0, 0%, 100%);
-    padding: 15px 100px;
-    padding-bottom: 20px;
-}
-
-header .loop{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .loop h3{
-    font-family: "alata";
-    font-weight: 300;
-    font-size: 20px;
-}
-header .loop nav{
-    display: flex;
-    gap: 15px;
-}
-
-header .loop nav a{
-    font-family: "Josefin Sans";
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-size: 15px;
-    transition: transform 0.3s ease-in;
-}
-
-header .loop nav a:hover{
-    font-size: 14px;
-    border-bottom: 1px solid yellow;
-}
-header .loop ion-icon{
-    display: none;
-}
-
-header .immersive{
-    border: 1px solid;
-    width: 450px;
-    height: 200px;
-    font-size: 55px;
-    position: relative;
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    line-height: 1;
-    padding: 20px;
-}
-
-main{
-    padding: 100px;
-    width: auto; 
-}
-
-.interactive{
-    display: flex;
-    /* justify-content: center;  */
-    align-items: center;
-    flex-direction: row;
-    padding-bottom: 20px;
-}
-
-
-
-.interactive img{
-    width: 600px;
-    position: relative;
-    height: 380px;
-
-}
-
-.interactive .active{
-    z-index: 2;
-    border: none;
-    background-color: white;
-    width: 400px;
-    height: 215px;
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    position: absolute;
-    top: 670px;
-    left: 570px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 0px;
-}
-
-.interactive .active h2{
-    font-weight: 300;
-    color: black;
-    font-size: 30px;
-    line-height: 1;
-    width: 400px;
-}
-
-.interactive .active p{
-    font-family: "alata";
-    font-weight: 400;
-    color: #555;
-    font-size: 12px;
-    width: 350px;
-}
-
-
-
-.creation{
-    background-color: hsl(0, 0%, 100%);
-    padding: 20px 0px;
-    
-}
-
-.creation .create {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-right: 5px;
-}
-
-.creation .create h2{
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 20px;
-}
-
-button{
-    width: 80px;
-    height: 25px;
-    background-color: hsl(0, 0%, 100%);
-    border: 1px solid;
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.creation .earth{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    flex-wrap: wrap;
-    border: none;
-}
-
-.creation .earth div{
-    border: 1px solid ;
-    height: 290px;
-    width: 190px;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 15px;
-    padding-top: 250px;
-    padding-left: 20px;
-    line-height: 1;
-    
-}
-
-.creation .earth div:nth-child(1){
-    background-image: url(/Image/desktop/image-deep-earth.jpg);
-    background-size: cover;
-    
-}
-
-.creation .earth div:nth-child(2){
-    background-image: url(/Image/desktop/image-night-arcade.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(3){
-    background-image: url(/Image/desktop/image-soccer-team.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(4){
-    background-image: url(/Image/desktop/image-grid.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(5){
-    background-image: url(/Image/desktop/image-from-above.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(6){
-    background-image: url(/Image/desktop/image-pocket-borealis.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(7){
-    background-image: url(/Image/desktop/image-curiosity.jpg);
-    background-size: cover;
-}
-
-.creation .earth div:nth-child(8){
-    background-image: url(/Image/desktop/image-fisheye.jpg);
-    background-size: cover;
-}
-
-.mobile{
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    display: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-   
-}
-
-.mobile .createMobile h2{
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 25px;
-}
- 
-
-.mobile .earthMobile{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-.mobile .earthMobile div{
-    border: 1px solid ;
-    height: 200px;
-    width: 540px;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 1;
-    padding-top: 60px;
-    padding-left: 20px;
-
-}
-.mobile div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile .earthMobile div:nth-child(1){
-    background-image: url(/Image/Mobile/image-deep-earth.jpg);
-    background-size: contain;
-    
-}
-
-.mobile .earthMobile div:nth-child(2){
-    background-image: url(/Image/Mobile/image-night-arcade.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(3){
-    background-image: url(/Image/Mobile/image-soccer-team.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(4){
-    background-image: url(/Image/Mobile/image-grid.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(5){
-    background-image: url(/Image/Mobile/image-from-above.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(6){
-    background-image: url(/Image/Mobile/image-pocket-borealis.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(7){
-    background-image: url(/Image/Mobile/image-curiosity.jpg);
-    background-size: contain;
-}
-
-.mobile .earthMobile div:nth-child(8){
-    background-image: url(/Image/Mobile/image-fisheye.jpg);
-    background-size: contain;
-}
-
-.mobile button{
-    width: 250px;
-    height: 80px;
-    background-color: hsl(0, 0%, 100%);
-    border: 1px solid;
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-footer{
-    background-color: hsl(0, 0%, 0%);
-    color: white;
-
-}
-
-.foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    gap: 40px;
-    padding: 5px 100px;
-
-}
-
-.foot .loo h3{
-    font-family: "alata";
-    font-weight: 400;
-    font-size: 25px;
-}
-
-.foot .loo nav{
-    display: flex;
-    gap: 10px;
-}
-
-.foot .loo nav a{
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    transition: transform .3s ease-in;
-}
-
-.foot .loo nav a:hover{
-    font-size: 12px;
-}
-
-
-.foot .icon ion-icon{
-    font-size: 10px;
-    
-    
-      
- }
-
- .foot .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
- }
- .foot .icon p{
-    font-size: 10px;
- }
-
- 
-
-/* -------------Media Query--------------- */
-/* @media screen  and (max-width: 1280px){
-    header .immersive{
-        border: 2px solid;
-        width: 560px;
-        height: 250px;
-        font-size: 65px;
-        position: relative;
-        font-family: "Josefin Sans";
-        font-weight: 300;
-        line-height: 1;
-        padding: 25px;
-    }
-    
-    .interactive img{
-        width: 700px;
-        position: relative;
-        height: 420px;
-    
-    }
-    
-    .interactive .active{
-        z-index: 2;
-        border: none;
-        background-color: white;
-        width: 400px;
-        height: 215px;
-        font-family: "Josefin Sans";
-        font-weight: 300;
-        position: absolute;
-        top: 710px;
-        left: 620px;
-        padding-top: 50px;
-        padding-left: 80px;
-        padding-bottom: 0px;
-    }
-    
-    .interactive .active h2{
-        font-weight: 300;
-        color: black;
-        font-size: 30px;
-        line-height: 1;
-        width: 420px;
-    }
-    
-    .interactive .active p{
-        font-family: "alata";
-        font-weight: 400;
-        color: #555;
-        font-size: 14px;
-        width: 400px;
-    }
-    
-.creation .earth div{
-    border: 1px solid ;
-    height: 320px;
-    width: 240px;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    font-family: "Josefin Sans";
-    font-weight: 300;
-    font-size: 15px;
-    padding-top: 250px;
-    padding-left: 20px;
-    line-height: 1;  
-} */
-
 @media screen and (max-width:1000px){
     
     header .loop ion-icon{
@@ -466,36 +15,36 @@ footer{
     }
 
     .interactive img{
-        width: 450px;
-        height: 300px;
+        width: 500px;
+        height: 350px;
         justify-items: center;
     }
 
     .interactive .active{
         border: none;
-        width: 350px;
-        height: 200px;
+        width: 470px;
+        height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         position: absolute; 
         left:470px;
-        top: 600px;
-        padding-top: 45px;
+        top: 525px;
+        padding-top: 70px;
         padding-left: 50px; 
         max-width: 100%;
     }
     .interactive .active h2{
         font-weight: 300;
-        font-size: 30px;
+        font-size: 35px;
         line-height: 1;
-        width: 300px;
+        width: 350px;
     }
     
     .interactive .active p{
-        font-size: 13px;
-        width: 300px;
+        font-size: 15px;
+        width: 350px;
         line-height: 1.2;
 
     }
@@ -512,7 +61,7 @@ footer{
     .creation .earth div{
         border: 1px solid ;
         height: 300px;
-        width: 165px;
+        width: 195px;
         border: none;
         color: hsl(0, 0%, 100%);
         font-family: "Josefin Sans";
@@ -580,15 +129,15 @@ footer{
             justify-content: center;
             flex-direction: column;
             position: absolute;
-            left:200px;
-            top: 1000px;
+            left:120px;
+            top: 930px;
             padding-top: 75px;
             padding-left: 50px;
             max-width: 100%;
         }
         .interactive .active h2{
             font-weight: 300;
-            font-size: 35px;
+            font-size: 40px;
             color: black;
             text-align: center;
             line-height: 1;  
@@ -737,8 +286,8 @@ footer{
                 justify-content: center;
                 flex-direction: column;
                 position: absolute;
-                left:150px;
-                top: 910px;
+                left:85px;
+                top: 810px;
                 padding-top: 75px;
                 padding-left: 20px;
                 max-width: 100%;
@@ -746,7 +295,7 @@ footer{
             .interactive .active h2{
                 font-weight: 300;
                 color: black;
-                font-size: 35px;
+                font-size: 40px;
                 line-height: 1;  
             }
             
@@ -802,7 +351,7 @@ footer{
                 padding-right: 60px;
             }
             header .immersive{
-            border: 2px solid;
+            border: 1px solid;
             width: 450px;
             height: 200px;
             font-size: 50px;
@@ -832,8 +381,8 @@ footer{
                 justify-content: center;
                 flex-direction: column;
                 position: absolute;
-                left: 85px;
-                top: 870px;
+                left: 28px;
+                top: 770px;
                 padding-top: 75px;
                 padding-left: 20px;
                 max-width: 100%;
@@ -841,7 +390,7 @@ footer{
             .interactive .active h2{
                 font-weight: 300;
                 color: black;
-                font-size: 35px;
+                font-size: 40px;
                 line-height: 1;  
             }
             
@@ -890,7 +439,7 @@ footer{
         padding-right: 30px;
     }
     header .immersive{
-    border: 2px solid;
+    border: 1px solid;
     width: 350px;
     height: 150px;
     font-size: 40px;
@@ -912,8 +461,8 @@ footer{
         justify-content: center;
         flex-direction: column;
         position: absolute;
-        left: 40px;
-        top: 800px;
+        left: 0px;
+        top: 720px;
         padding-top: 75px;
         padding-left: 10px;
         padding-right: 18px;
@@ -942,7 +491,7 @@ footer{
     .mobile .createMobile h2{
         font-family: "Josefin Sans";
         font-weight: 300;
-        font-size: 25px;
+        font-size: 30px;
     }
     .foot .loo h3{
         font-size: 45px;
@@ -965,7 +514,7 @@ footer{
         padding-right: 35px;
     }
     header .immersive{
-    border: 2px solid;
+    border: 1px solid;
     width: 280px;
     height: 140px;
     font-size: 30px;
@@ -987,7 +536,7 @@ footer{
     flex-direction: column;
     position: absolute;
     left: 8px;
-    top: 760px;
+    top: 660px;
     padding-top: 75px;
     padding-left: 10px;
     max-width: 100%;
@@ -995,7 +544,7 @@ footer{
 .interactive .active h2{
     font-weight: 300;
     color: black;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1;  
 }
 
@@ -1003,12 +552,12 @@ footer{
     font-size: 20px;
     font-weight: 300;
     text-align: center;
-    width: 230px;
+    width: 250px;
 }
 .mobile .createMobile h2{
     font-family: "Josefin Sans";
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .mobile .earthMobile div{
@@ -1033,21 +582,6 @@ footer{
 }
 
 }
-   
-    
-    
-    
-
 
         
-    
-
-
-
-
-
-
-
-
-
-
+        
